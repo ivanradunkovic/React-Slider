@@ -1,11 +1,22 @@
 import React from 'react';
+import './slider.scss';
 
 function Slider() {
-    return(
+
+    //Array for show component inside slider
+    let sliderArray = [1,2,3,4,5];
+
+    return (
         <div clasName="slider">
-            <p>Slider</p>
+            {sliderArray.map((item, index) => {
+                    return(
+                        <div key={index} className="slide">
+                            {item}
+                        </div>
+                    );
+            })}
         </div>
-    )
+    );
 
 }
 
