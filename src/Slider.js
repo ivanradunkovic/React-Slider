@@ -7,9 +7,9 @@ function Slider() {
     let sliderArray = [1,2,3,4,5];
 
     return (
-        <div clasName="slider">
+        <div className="slider">
             {sliderArray.map((item, index) => {
-                    return(
+                    return (
                         <div key={index} className="slide">
                             {item}
                         </div>
@@ -17,7 +17,6 @@ function Slider() {
             })}
         </div>
     );
-
 }
 
 export default Slider
