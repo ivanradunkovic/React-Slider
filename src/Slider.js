@@ -2,20 +2,29 @@ import React, {useState} from 'react';
 import './slider.scss';
 import ImageComponent from './ImageComponent';
 import i1 from './assets/slider-image-1.jpg';
-// import i2 from './assets/slider-image-2.jpg'
-// import i3 from './assets/slider-image-3.jpg'
-// import i4 from './assets/slider-image-4.jpg'
-// import i5 from './assets/slider-image-5.jpg'
-// import i6 from './assets/slider-image-6.jpg'
-// import i7 from './assets/slider-image-7.jpg'
-// import i8 from './assets/slider-image-8.jpg'
-// import i9 from './assets/slider-image-9.jpg'
+import i2 from './assets/slider-image-2.jpg'
+import i3 from './assets/slider-image-3.jpg'
+import i4 from './assets/slider-image-4.jpg'
+import i5 from './assets/slider-image-5.jpg'
+import i6 from './assets/slider-image-6.jpg'
+import i7 from './assets/slider-image-7.jpg'
+import i8 from './assets/slider-image-8.jpg'
+import i9 from './assets/slider-image-9.jpg'
 
 
 function Slider() {
 
     //Array for show component inside slider
-    let sliderArray = [<ImageComponent src={i1} />, 2,3,4,5];
+    let sliderArray = [<ImageComponent src={i1} />,
+                       <ImageComponent src={i2} />, 
+                       <ImageComponent src={i3} />, 
+                       <ImageComponent src={i1} />, 
+                       <ImageComponent src={i4} />, 
+                       <ImageComponent src={i5} />, 
+                       <ImageComponent src={i6} />, 
+                       <ImageComponent src={i7} />, 
+                       <ImageComponent src={i8} />, 
+                       <ImageComponent src={i9} />];
     const [x, setX] = useState(0);
     const goLeft=() => {
         console.log(x);
@@ -35,8 +44,12 @@ function Slider() {
                         </div>
                     );
             })}
-            <button id="goLeft" onClick={goLeft}>Left</button>
-            <button id="goRight" onClick={goRight}>Right</button>
+            <button id="goLeft" onClick={goLeft}>
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="goRight" onClick={goRight}>
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     );
 }
