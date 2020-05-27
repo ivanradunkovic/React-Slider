@@ -6,10 +6,18 @@ class Text extends Component {
 
         return (
             <div className="text">
-            <p><h2>Lorem ipsum dolor sit amet consectetur adipiscing elit</h2></p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+            <h2>Lorem ipsum dolor
+            <td>sit amet consectetur</td>
+            adipiscing elit</h2>
+            <div className="text2">
+               <p>Ut enim ad minim veniam quis</p>
+               <p>nostrud exercitation ullamco</p>
+               <p>laboris nisi ut aliquip ex ea</p>
+               <p>commodo consequat.</p>
+               <p>Duis aute irure dolor in reprehenderit</p>
+               <p>in voluptate velit esse cillum</p>
+               <p>dolore eu fugiat nulla pariatur.</p>
+            </div>
             </div>
             )
         }
