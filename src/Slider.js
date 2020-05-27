@@ -15,16 +15,21 @@ import i9 from './assets/slider-image-9.jpg'
 function Slider() {
 
     //Array for show component inside slider
+    // let chunk_size = 9;
     let sliderArray = [<ImageComponent src={i1} />,
                        <ImageComponent src={i2} />, 
                        <ImageComponent src={i3} />, 
-                       <ImageComponent src={i1} />, 
                        <ImageComponent src={i4} />, 
                        <ImageComponent src={i5} />, 
                        <ImageComponent src={i6} />, 
                        <ImageComponent src={i7} />, 
                        <ImageComponent src={i8} />, 
                        <ImageComponent src={i9} />];
+    // let groups = sliderArray.map( function(e,i){ 
+    //     return i%chunk_size===0 ? sliderArray.slice(i,i+chunk_size) : null; 
+    // }).filter(function(e){ return e; });
+    // console.log({sliderArray, groups})
+
     const [x, setX] = useState(0);
     const goLeft=() => {
         console.log(x);
