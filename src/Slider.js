@@ -11,11 +11,10 @@ import i7 from './assets/slider-image-7.jpg'
 import i8 from './assets/slider-image-8.jpg'
 import i9 from './assets/slider-image-9.jpg'
 
-
 function Slider() {
 
     //Array for show component inside slider
-    // let chunk_size = 9;
+    // let chunk_size = 9;  //Break in 2 rows
     let sliderArray = [<ImageComponent src={i1} />,
                        <ImageComponent src={i2} />, 
                        <ImageComponent src={i3} />, 
